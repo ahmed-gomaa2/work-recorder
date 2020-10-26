@@ -1,0 +1,35 @@
+{
+  "name": "work-recorder",
+  "version": "1.0.0",
+  "description": "app for recording products need to be fixed",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmed-gomaa2/work-recorder.git"
+  },
+  "author": "Ahmed Gomaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmed-gomaa2/work-recorder/issues"
+  },
+  "homepage": "https://github.com/ahmed-gomaa2/work-recorder#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  }
+}

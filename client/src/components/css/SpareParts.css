@@ -1,0 +1,11 @@
+.spareParts {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.spareParts__add:hover {
+    background-color: greenyellow;
+    color: black;
+}
+

@@ -1,0 +1,47 @@
+.spareParts__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spareParts__formItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+.spareParts__formItem input {
+    border: none;
+    background-color: #DDDDDD;
+    border-bottom: 1px solid blue;
+    width: 90%;
+    height: 30px;
+    border-radius: 4px;
+    transition: all ease-in-out .1s;
+}
+
+.spareParts__formItem input:focus {
+    outline: none;
+    width: 100%;
+}
+
+.spareParts__formItem select {
+    width: 70% !important;
+}
+
+.spareParts__form button {
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    transition: all ease-in-out .2s;
+    border: none;
+    cursor: pointer;
+}
+
+.spareParts__form button:hover {
+    background-color: #7FDBFF;
+    color: black;
+}
