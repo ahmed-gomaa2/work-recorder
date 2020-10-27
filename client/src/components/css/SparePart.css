@@ -11,6 +11,11 @@
     justify-content: space-between;
 }
 
+.sparePart__name p {
+    font-size: x-large;
+    color: #7FDBFF;
+}
+
 .sparePart__addProduct {
     height: 90%;
     width: auto;

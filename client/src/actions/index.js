@@ -62,3 +62,21 @@ export const giveSparePart = (info) => async dispatch => {
         payload: res.data
     })
 }
+
+export const createWorker = info => async dispatch => {
+    const res = await axios.post('/api/create/worker', info)
+
+    dispatch({
+        type:'CREATE_WORKER',
+        payload: res.data
+    })
+}
+
+export const fetchingWorkers = () => async dispatch => {
+    const res = await axios.get('/api/workers/get')
+
+    dispatch({
+        type:'FETCHING_WORKERS',
+        payload: res.data
+    })
+}

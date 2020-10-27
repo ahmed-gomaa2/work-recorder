@@ -5,6 +5,12 @@
     height: 60px;
     margin-left: 20px;
 }
+
+.sparePartLine h3 {
+    max-width: 200px;
+    min-width: 150px;
+    color: blueviolet;
+}
 .sparePart__take {
     height: 90%;
     width: auto;

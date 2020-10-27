@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const keys = require('./keys.js')
 const Product = require('./modals/Product.js')
 const SparePart = require('./modals/SparePart.js')
+const Worker = require('./modals/Worker.js')
 
 const app = express();
 
@@ -83,6 +84,27 @@ app.post('/api/sparePart/give', (req, res) => {
         }else {
             console.log(newSparePart)
             res.send(newSparePart)
+        }
+    })
+})
+
+app.post('/api/create/worker', (req, res) => {
+    const newWorker = req.body;
+    Worker.create(newWorker, (err, newW) => {
+        if(err) {
+            console.log(err)
+        }else {
+            res.send(newW)
+        }
+    })
+})
+
+app.get('/api/workers/get', (req, res) => {
+    Worker.find({}, (err, workers) => {
+        if(err) {
+            console.log(err)
+        }else {
+            res.send(workers)
         }
     })
 })

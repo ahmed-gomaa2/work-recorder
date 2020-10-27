@@ -16,8 +16,14 @@
     display: flex;
     align-items: center;
     padding: 0 10px;
+    height: 100%;
 }
 
 .header__item:hover {
     text-decoration: none;
+}
+
+.header__active {
+    color: green;
+    border-bottom: 1px solid red;
 }

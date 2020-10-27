@@ -1,0 +1,46 @@
+.worker {
+    display: flex;
+    flex-direction: column;
+}
+
+.worker__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.worker__header h3 {
+    color: blueviolet;
+
+}
+
+.worker__header a {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: all ease-in-out .2s;
+}
+
+.worker__header a:hover {
+    background-color: blue;
+}
+
+.worker__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+}
+
+.worker__lineEven {
+    background-color: blueviolet;
+    color: white;
+}
+
+.worker__lineOdd {
+    background-color: #7FDBFF;
+    color: black;
+}

@@ -1,19 +1,19 @@
 import React from 'react';
 import './css/Header.css'
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 const Header = (props) => {
     return (
         <div className={'header'}>
-            <Link to={'/'} className="header__item">
+            <NavLink exact activeClassName={'header__active'} to={'/'} className="header__item">
                 Home
-            </Link>
-            <Link to={'/spareParts'} className="header__item">
+            </NavLink>
+            <Link exact activeClassName={'header__active'} to={'/spareParts'} className="header__item">
                 Spare Parts
             </Link>
-            <Link className="header__item">
+            <NavLink exact activeClassName={'header__active'} to={'/workers'} className="header__item">
                 Workers
-            </Link>
+            </NavLink>
 
         </div>
     );
